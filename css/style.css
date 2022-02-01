@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 30px 2%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container.one {
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 140px;
+}
+
+nav.menu-mobile {
+    z-index: 3;
+    display: none;
+    width: 26px;
+    height: 26px;
+    background-image: url("../imagens/icon_menu.png");
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.ssd {
+    float: left;
+}
+
+nav.menu-mobile .ssd {
+    display: none;
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 60px;
+}
+
+nav.menu-mobile .item-menu {
+    width: 100%;
+    z-index: 2;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.menu-desktop {
+    padding-top: 20px;
+    display: flex;
+}
+
+.menu-desktop .item-menu {
+    padding: 0 23px;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.menu-mobile a,
+.menu-desktop a,
+.footer {
+    color: black;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: black;
+    background-image: url(../imagens/bg.jpg);
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.text-banner {
+    padding: 100px;
+}
+
+.text-single {
+    width: 290px;
+    height: 60px;
+    background-image: url(../imagens/box-text.png);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.text-single:nth-of-type(4) {
+    height: 60px;
+    background-image: url(../imagens/box-white-text.png);
+    background-size: 100% 100%;
+    color: black;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.veiculos-destaque {
+    padding: 90px 2%;
+}
+
+.veiculos-destaque h2 {
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+}
+
+.traco {
+    width: 30%;
+    height: 1px;
+    border: 1px solid black;
+    margin: 30px;
+    position: relative;
+    top: -10px;
+}
+
+.four {
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.vitrine-destaque,
+.vitrine-dest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    margin-top: 25px;
+}
+
+.vitrine-destaque .img-carro,
+.img-car {
+    min-width: 200px;
+    width: 80%;
+    padding-top: 50%;
+    height: auto;
+    background-size: 100% 100%;
+    background-image: url("../imagens/carro1.jpg");
+}
+
+.vitrine-destaque h3,
+.vitrine-dest h3 {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.vitrine-destaque p,
+.vitrine-dest p {
+    color: #353535;
+}
+
+.vitrine-destaque .botao,
+.vitrine-dest .botao {
+    width: 90px;
+    height: 30px;
+    margin-top: 8px;
+    text-align: center;
+    background-color: tomato;
+}
+
+.vitrine-destaque a,
+.vitrine-dest a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.servicos-descricao {
+    width: 100%;
+}
+
+.five {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.half1 {
+    padding: 80px 2%;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+    font-style: italic;
+}
+
+.half1 h2 {
+    margin-bottom: 30px;
+}
+
+.half1 ul {
+    padding-left: 20px;
+}
+
+.mais-sobre {
+    align-self: flex-end;
+    padding-left: 40px;
+}
+
+.mais-sobre a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-top: 8px;
+    text-align: center;
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+.half2 {
+    padding: 80px 2%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: #EB2D2D;
+    color: white;
+    font-style: italic;
+}
+
+.half2 h2 {
+    margin-bottom: 30px;
+}
+
+.nome {
+    padding-top: 6px;
+    text-align: right;
+    color: black;
+}
+
+.single-depoimento {
+    max-width: 400px;
+}
+
+.arrows img {
+    cursor: pointer;
+    padding: 7px;
+}
+
+.contato {
+    width: 100%;
+    padding: 60px 2%;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    font-style: italic;
+}
+
+.seven {
+    justify-content: center;
+}
+
+.form-contato {
+    max-width: 400px;
+}
+
+form {
+    width: 100%;
+}
+
+.w50 {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+}
+
+.w100 {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.w150 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.form-contato input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.form-contato textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #dadada;
+    resize: none;
+}
+
+.form-contato span {
+    padding-right: 5px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.form-contato input[type="submit"] {
+    width: 90px;
+    height: 30px;
+    margin-top: 8px;
+    text-align: center;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+form input[type="submit"]:focus,
+form input[type="text"]:focus,
+form textarea:focus {
+    outline: 0;
+}
+
+footer {
+    padding: 20px 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+}
+
+footer nav.footer {
+    display: flex;
+}
+
+.footer a,
+.direitos p {
+    text-decoration: none;
+    padding-right: 15px;
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.venda {
+    width: 100%;
+    min-height: 90%;
+    padding: 60px 2%;
+}
+
+.venda>h2 {
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    font-style: italic;
+}
+
+.content-venda {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.container-venda {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    width: 25%;
+}
+
+.search1>h2,
+.search2>h2 {
+    font-size: 23px;
+    color: black;
+    font-weight: normal;
+}
+
+.search1 {
+    max-width: 300px;
+}
+
+.search1 .barra-preco {
+    max-width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.barra-preco-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 18px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.pointer-barra {
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    width: 10px;
+    height: 22px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    cursor: pointer;
+}
+
+.valor-pesquisa {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.valor-pesquisa>p {
+    color: black;
+    font-size: 14px;
+}
+
+.search2 {
+    padding-top: 30px;
+}
+
+.form-venda-wraper {
+    margin-top: 8px;
+}
+
+.form-venda-wraper label {
+    width: 20px;
+    height: 20px;
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.vitrine-wraper {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vitrine-venda {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.sobre {
+    width: 100%;
+    min-height: 90%;
+    padding: 60px 2%;
+}
+
+.sobre-container {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-destaque-sobre {
+    width: 50%;
+    padding-top: 30%;
+    background-color: rgb(220, 220, 220);
+}
+
+.sobre .descricao-autor {
+    margin: 20px 2% 0 2%;
+    margin-top: 20px;
+    max-width: 650px;
+}
+
+.sobre .descricao-autor>h2 {
+    font-size: 24px;
+}
+
+.sobre .descricao-autor p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.descricao-autor2 {
+    margin: 20px 2% 0 2%;
+    margin-top: 20px;
+    max-width: 650px;
+    display: flex;
+}
+
+.img-autor {
+    width: 120px;
+    height: 150px;
+    background-color: #ccc;
+}
+
+.autor2 {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .vitrine-destaque {
+        width: 50%;
+        margin-top: 25px;
+    }
+    .vitrine-destaque .img-carro {
+        min-width: 200px;
+        width: 90%;
+        padding-top: 60%;
+    }
+    .container-venda {
+        flex-direction: column-reverse
+    }
+    .vitrine-wraper {
+        width: 100%;
+        justify-content: center;
+    }
+    .search2 {
+        padding-top: 0;
+        padding-left: 30px;
+    }
+    .search1,
+    .search2 {
+        padding-top: 50px;
+    }
+    aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-destaque-sobre {
+        width: 80%;
+        padding-top: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .four {
+        flex-direction: column;
+        align-items: center;
+    }
+    .vitrine-destaque {
+        margin-top: 25px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .five {
+        flex-direction: column;
+    }
+    .half1,
+    .half2 {
+        width: 100%;
+    }
+    footer {
+        justify-content: center;
+    }
+    footer nav.footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: initial;
+    }
+    .img-destaque-sobre {
+        width: 90%;
+        padding-top: 54%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text-banner {
+        padding: 50px;
+    }
+    .img-autor {
+        margin-top: 30px;
+    }
+}
